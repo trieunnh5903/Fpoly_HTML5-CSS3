@@ -1,0 +1,20 @@
+@media (min-width: 740px) and (max-width: 1023px){
+    .main{
+        padding: 50px;
+    }
+    .main__container__right iframe{
+        height: 445px;
+    }
+}
+@media (max-width: 739px){
+    .main{
+        padding: 0;
+    }
+    .main__container{
+        flex-direction: column;
+    }
+    .main__container__left, .main__container__right{
+        width: unset;
+    }
+    
+}

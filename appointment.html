@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/appointment.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="header hide-on-mobile-and-tablet">
+            <div class="header__contact">
+                <div class="header__contact__phone">
+                    <i class="fa-solid fa-phone header__contact__phone__phone-icon"></i>
+                    <p class="header__contact__phone__phone-number">028.71.079.889</p>
+                </div>
+                <div class="header__contact__social">
+                    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                    <div class="header__contact__taikhoan">
+                        <a class="header__contact__taikhoan__dang-nhap" href="./login.html">Đăng nhập</a>
+                        <a class="header__contact__taikhoan__dang-ky" href="./register.html">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__banner">
+            <div class="header__banner__logo">
+                <a href="./index.html"><img src="/assets/img/logo-white.png" alt="logo"></a>
+            </div>
+            <div class="mobile__icons">
+                <div class="mobile__icon">
+                    <a href="./login.html"><i style="color: white;" class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="mobile__icon">
+                    <label for="radio-nav-bar"><i class="fa-solid fa-bars"></i></label>
+                </div>
+            </div>
+            <input type="checkbox" hidden id="radio-nav-bar">
+            <div class="header__banner__navigation-bar">
+                <a href="./about-us.html">Về chúng tôi</a>
+                <a href="./service.html">Dịch vụ</a>
+                <a href="./appointment.html">Đặt lịch</a>
+                <a href="./contact.html">Liên hệ</a>
+            </div>
+        </div>
+        <div class="header__banner__img mb-100">
+            <p class="header__banner__img__text fs-41">“Việc làm đẹp là khoản đầu tư mang lại giá trị lâu bền”<br>
+                Hãy đặt lịch hẹn ngay hôm nay!</p>
+        </div>
+
+        <div class="main">
+            <div style="margin: 0 auto;"  class="row main__mo-cua mb-100">
+                <div class="l-6 s-12 main__mo-cua__left padding-15-on-mobile">
+                    <img src="/assets/img/service-5.jpg" alt="">
+                </div>
+                <div class="l-6 s-12 main__mo-cua__right">
+                    <div class="main__mo-cua__right__content">
+                        <div class="main__key-word main__key-word__gio-mo-cua">
+                            <span>GIỜ MỞ CỬA</span>
+                        </div>
+                        <h1>
+                            NƠI THƯ GIẢN VÀ CHĂM SÓC
+                            SẮC ĐẸP TỐT NHẤT
+                        </h1>
+                        <p>
+                            Với hơn 6 năm kinh nghiệm và sở hữu 11 chi nhánh trên toàn quốc, Vital Clinic đã làm hài
+                            lòng
+                            hàng trăm nghìn khách hàng với các liệu trình thẩm mỹ và sản phẩm chăm sóc sức khỏe hàng đầu
+                            Châu Âu.
+                        </p>
+                        <div class="main__mo-cua__right__thoi-gian">
+                            <div class="main__mo-cua__right__thoi-gian__mo">
+                                <svg width="20" height="20">
+                                    <circle cx="10" cy="10" r="5" stroke="#f9a392" stroke-width="2" fill="white" />
+                                </svg>
+                                <p>Thứ 2 - 7 : 9:00 AM - 21:30 PM</p>
+                            </div>
+                            <div class="main__mo-cua__right__thoi-gian__mo">
+                                <svg width="20" height="20">
+                                    <circle cx="10" cy="10" r="5" stroke="#f9a392" stroke-width="2" fill="white" />
+                                </svg>
+                                <p>Chủ nhật: Nghỉ</p>
+                            </div>
+                        </div>
+                        <button class="main__button">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col ml-0 make-appointment">
+                <div class="form">
+                    <div class="form-title">
+                        <h1>
+                            ĐẶT LỊCH HẸN
+                        </h1>
+                        <p>Đặt lịch ngay hôm nay để nhận ưu đãi hấp dẫn</p>
+                    </div>
+                    <div class="form-content">
+                        <div class="form--group">
+                            <div class="form--group--item">
+                                <input type="text" name="name" id="" placeholder="Họ và tên">
+                            </div>
+                            <div class="form--group--item">
+                                <input type="text" name="email" id="" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form--group">
+                            <div class="form--group--item">
+                                <input type="date" name="address" id="" placeholder="Chọn ngày">
+                            </div>
+                            <div class="form--group--item">
+                                <input style="padding: 1.35rem;" type="time" name="phone" id="" placeholder="Thời gian">
+                            </div>
+                        </div>
+                        <div class="form--group">
+                            <div class="form--group--item">
+                                <select id="service">
+                                    <option value="-1">Dịch Vụ</option>
+                                    <option value="vung-mat">Vùng mặt</option>
+                                    <option value="co-the">Cơ thể</option>
+                                    <option value="tre-hoa">Trẻ hóa</option>
+                                    <option value="suc-khoe">Sức khỏe</option>
+                                    <option value="nam-gioi">Nam giới</option>
+                                </select>
+                            </div>
+                            <div class="form--group--item">
+                                <button class="form--group--item--button">ĐẶT LỊCH NGAY</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider padding-15-on-mobile">
+            <!--  -->
+            <div class="row-2 slide">
+                <div class="l-5 slide-left">
+                    <img src="/assets/img/khach-hang/hinh-khach-hang-1.jpg" alt="">
+                </div>
+                <div class="l-7 slide-right">
+                    <div class="slide-right-content">
+                        <div class="main__key-word main__key-word__gio-mo-cua">
+                            <span>CẢM NHẬN</span>
+                        </div>
+
+                        <h1 class="slide-right-content-title fs-41">
+                            Khách Hàng Nói Gì
+                            Về Chúng Tôi ?
+                        </h1>
+                        <div class="customer">
+                            <img src="/assets/img/khach-hang/hinh-khach-hang-1.jpg" alt="">
+                        </div>
+                        <h2 class="slide-right-content-name fs-20">Chị Mai Anh</h2>
+                        <p class="slide-right-content-office fs-16">Doanh nhân</p>
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <p class="fs-16 slide-right-content-feedback">
+                            “Lần đầu làm đẹp mình rất sợ đau, nhưng sau khi trải nghiệm các liệu trình tại Vita thì vô
+                            cùng yêu thích. Cảm giác rất thoải mái, dễ chịu, đặc biệt là các bạn nhân viên và bác sĩ
+                            luôn chăm sóc mình rất chuyên nghiệp. Từ khi làm đẹp tại Vita, mình cảm thấy năng lượng tích
+                            cực của mình tăng lên gấp nhiều lần, mình cảm thấy yêu đời và làm mọi việc thuận lợi hơn.”
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-2 slide">
+                <div class="l-5 slide-left">
+                    <img src="/assets/img/khach-hang/hinh-khach-hang-02.png" alt="">
+                </div>
+                <div class="l-7 slide-right">
+                    <div class="slide-right-content">
+                        <div class="main__key-word main__key-word__gio-mo-cua">
+                            <span>CẢM NHẬN</span>
+                        </div>
+
+                        <h1 class="slide-right-content-title fs-41">
+                            Khách Hàng Nói Gì
+                            Về Chúng Tôi ?
+                        </h1>
+                        <div class="customer">
+                            <img src="/assets/img/khach-hang/hinh-khach-hang-02.png" alt="">
+                        </div>
+                        <h2 class="slide-right-content-name fs-20">Chị Lệ Trung</h2>
+                        <p class="slide-right-content-office fs-16">Khách hàng</p>
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <p class="fs-16 slide-right-content-feedback">
+                            “Thứ 7 hoặc Chủ Nhật hàng tuần mình đều đến Vita để làm liệu trình Body Regenesis. Ngoài ra
+                            mình cũng đặc biệt yêu thích các công nghệ mới về liệu pháp tế bào tại Vita. Vóc dáng mình
+                            thon gọn hơn, làn da trở nên tươi trẻ và mịn màng hơn rất nhiều. Mình đặt niềm tin vào Vita
+                            hơn 1 năm nay rồi, cảm thấy khoảng đầu tư cho làm đẹp tại đây thực sự xứng đáng.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-2 slide">
+                <div class="l-5 slide-left">
+                    <img src="/assets/img/khach-hang/hinh-khach-hang-03.png" alt="">
+                </div>
+                <div class="l-7 slide-right">
+                    <div class="slide-right-content">
+                        <div class="main__key-word main__key-word__gio-mo-cua">
+                            <span>CẢM NHẬN</span>
+                        </div>
+
+                        <h1 class="slide-right-content-title fs-41">
+                            Khách Hàng Nói Gì
+                            Về Chúng Tôi ?
+                        </h1>
+                        <div class="customer">
+                            <img src="/assets/img/khach-hang/hinh-khach-hang-03.png" alt="">
+                        </div>
+                        <h2 class="slide-right-content-name fs-20">Chị Thu Trang</h2>
+                        <p class="slide-right-content-office fs-16">Doang nhân</p>
+                        <div class="quote"><i class="fa-solid fa-quote-right"></i></div>
+                        <p class="fs-16 slide-right-content-feedback">
+                            “Khi các dấu hiệu lão hóa xuất hiện, da của mình bắt đầu xấu đi khiến mình cảm thấy rất tự
+                            ti, công việc cũng từ đó mà không được thuận lợi. Mình nhận ra đã đến lúc phải dành thời
+                            gian cho bản thân và mình đã tìm đến Vita. Chỉ với 1 giờ làm đẹp mỗi tuần tại Vita, kết quả
+                            đã ngoài sự mong đợi của mình. Làn da và sức khỏe được cải thiện rất nhiều. Dần dần mình lấy
+                            lại được thần thái khi làm việc với đối tác, nhân viên.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hide-on-mobile navigation-btn">
+                <div onclick="changeSlides(-1)" class="navigation-left">
+                    <i class="fa-solid fa-circle-chevron-left"></i>
+                </div>
+                <div onclick="changeSlides(1)" class="navigation-right">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+    
+            function changeSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("slide");
+                console.log(slides)
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+    
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex - 1].style.display = "flex";
+               
+            }
+        </script>
+        <footer>
+            <div class="l-12 s-12 top__footer">
+                <div class="change__to__row">
+                    <div class="l-5 s-12 left__footer">
+                        <div class="left__footer__img">
+                            <img src="assets/img/logo-white.png" alt="">
+                        </div>
+                        <p>
+                            Công ty TNHH Esme Quá Đẹp Việt Nam <br>
+                            MST: 0316939389 <br>
+                            346 Bến Vân Đồn, Phường 1, Quận 4, Tp. Hồ Chí Minh
+                        </p>
+                        <div class="left__footer__social">
+                            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="l-2 s-12 mid__footer footer__item">
+                        <p>Liên kết</p>
+                        <a href=""><canvas id="myCanvas" width="20px" height="20px"></canvas>Về chúng tôi</a>
+                        <a href=""><canvas id="myCanvas2" width="20px" height="20px"></canvas>Dịch vụ</a>
+                        <a href=""><canvas id="myCanvas3" width="20px" height="20px"></canvas>Cảm nhận khách hàng</a>
+                        <a href=""><canvas id="myCanvas4" width="20px" height="20px"></canvas>Đặt lịch</a>
+                        <a href=""><canvas id="myCanvas5" width="20px" height="20px"></canvas>Liên hệ</a>
+                    </div>
+                    <div class="l-5 s-12 right__footer footer__item">
+                        <h1>Gọi ngay</h1>
+                        <p>028.71.079.889</p>
+                        <h2>Đăng ký nhận thông báo</h2>
+                        <input type="text" placeholder="Email của bạn" name="" id=""> <button class="button_footer">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-12 s-12 bottom__footer ">
+                <p>© <a href="">VITAClinic</a>. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var canvas2 = document.getElementById("myCanvas2");
+            var canvas3 = document.getElementById("myCanvas3");
+            var canvas4 = document.getElementById("myCanvas4");
+            var canvas5 = document.getElementById("myCanvas5");
+            var arr = [canvas, canvas2, canvas3, canvas4, canvas5];
+            for (var i = 0; i <= arr.length; i++) {
+                var ctx = arr[i].getContext("2d");
+                ctx.beginPath();
+
+                ctx.moveTo(0, 0);
+                ctx.lineTo(7, 7);
+                ctx.lineTo(0, 14);
+                ctx.strokeStyle = "#757575"
+                ctx.stroke();
+            }
+        </script>
+    </div>
+</body>
+
+</html>

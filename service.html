@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/service.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="header hide-on-mobile-and-tablet">
+            <div class="header__contact">
+                <div class="header__contact__phone">
+                    <i class="fa-solid fa-phone header__contact__phone__phone-icon"></i>
+                    <p class="header__contact__phone__phone-number">028.71.079.889</p>
+                </div>
+                <div class="header__contact__social">
+                    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                    <div class="header__contact__taikhoan">
+                        <a class="header__contact__taikhoan__dang-nhap" href="./login.html">Đăng nhập</a>
+                        <a class="header__contact__taikhoan__dang-ky" href="./register.html">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__banner">
+            <div class="header__banner__logo">
+                <a href="./index.html"><img src="/assets/img/logo-white.png" alt="logo"></a>
+            </div>
+            <div class="mobile__icons">
+                <div class="mobile__icon">
+                    <a href="./login.html"><i style="color: white;" class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="mobile__icon">
+                    <label for="radio-nav-bar"><i class="fa-solid fa-bars"></i></label>
+                </div>
+            </div>
+            <input type="checkbox" hidden id="radio-nav-bar">
+            <div class="header__banner__navigation-bar">
+                <a href="./about-us.html">Về chúng tôi</a>
+                <a href="./service.html">Dịch vụ</a>
+                <a href="./appointment.html">Đặt lịch</a>
+                <a href="./contact.html">Liên hệ</a>
+            </div>
+        </div>
+        <div class="header__banner__img">
+            <p class="header__banner__img__text">Dịch vụ</p>
+        </div>
+
+        <div class="main">
+            <div class="main-nav hide-on-mobile-and-tablet">
+                <ul>
+                    <li><a href="#vung-mat">Vùng mặt</a></li>
+                    <li><a href="#co-the">Cơ thể</a></li>
+                    <li><a href="#tre-hoa">Trẻ hóa</a></li>
+                    <li><a href="#suc-khoe">Sức khỏe</a></li>
+                    <li><a href="#nam-gioi">Nam Giới</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div id="vung-mat" class="main-content--group-title mb-12">
+                    vùng mặt
+                </div>
+                <div class="main-content--group-items mb-27">
+                    <div class="group-item">
+                        <img src="./assets/img/vung-mat/vital-light.jpg" alt="">
+                        <h1 id="co-the" class="group-item-title">VITAL LIGHT</h1>
+                        <p class="group-item--content">Hồi sinh làn da với công nghệ ánh sáng
+                            và dưỡng chất thiên nhiên</p>
+                        <button class="mb__20 main__button">Book Now</button>
+
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/vung-mat/white-boost.jpg" alt="">
+                        <h1 class="group-item--title">VITAL WHITE BOOST</h1>
+                        <p class="group-item--content">Công thức nuôi dưỡng làn da sáng mịn
+                            tự nhiên </p>
+                        <button class="mb__20 main__button">Book Now</button>
+
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/vung-mat/vital-c-boost-skin.jpg" alt="">
+                        <h1 class="group-item--title">VITAL C BOOST SKIN</h1>
+                        <p class="group-item--content">“Vũ khí” chống lão hóa & làm sáng da
+                            được khoa học chứng nhận</p>
+                        <button class="mb__20 main__button">Book Now</button>
+
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/vung-mat/scar-microneedling.jpg" alt="">
+                        <h1 class="group-item--title">SCAR MICRONEEDING</h1>
+                        <p class="group-item--content">Phương pháp điều trị sẹo lõm
+                            hiệu quả</p>
+                        <button class="mb__20 main__button">Book Now</button>
+
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/vung-mat/thread-lift.jpg" alt="">
+                        <h1 class="group-item--title">THREAD LIFT</h1>
+                        <p class="group-item--content">Nâng cơ và trẻ hóa gương mặt
+                            bằng chỉ sinh học
+                        </p>
+                        <button class="mb__20 main__button">Book Now</button>
+
+                    </div>
+                </div>
+
+                <div class="main-content--group-title mb-12">
+                    Cơ thể
+                </div>
+                <div class="main-content--group-items mb-27">
+                    <div class="group-item">
+                        <img src="./assets/img/co-the/laser-hair-removal.jpg" alt="">
+                        <h1 id="tre-hoa" class="group-item--title">LASER HAIR REMOVAL</h1>
+                        <p class="group-item--content">Triệt lông vĩnh viễn, hiệu quả đến 99%</p>
+                        <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/co-the/laser-micro-needling.jpg" alt="">
+                        <h1 class="group-item--title">LASER MICRONEEDING</h1>
+                        <p class="group-item--content">Thay mới làn da bằng công nghệ
+                            Laser tiên tiến</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/co-the/laser-skin-health.jpg" alt="">
+                        <h1 class="group-item--title">LASER SKIN HEALTH</h1>
+                        <p class="group-item--content">Giải pháp trị nám được FDA
+                            chứng nhận</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/co-the/nsc.jpg" alt="">
+                        <h1 class="group-item--title">NSC</h1>
+                        <p class="group-item--content">Trẻ hóa làn da với Peptide từ thỏ</p>
+                        <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/co-the/rsc.jpg" alt="">
+                        <h1 class="group-item--title">RSC</h1>
+                        <p class="group-item--content">Liệu pháp trẻ hóa tế bào từ
+                            Thụy Sĩ</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="main-content--group-title mb-12">
+                    Trẻ hóa
+                </div>
+                <div class="main-content--group-items mb-27">
+                    <div class="group-item">
+                        <img src="./assets/img/tre-hoa/rejuvenation-ha.jpg" alt="">
+                        <h1 id="suc-khoe" class="group-item--title">REJUVENATION HA</h1>
+                        <p class="group-item--content">Cấy HA - cho làn da căng mướt</p>
+                        <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/tre-hoa/derma-under-eyes.jpg" alt="">
+                        <h1 class="group-item--title">DERMA UNDER EYES</h1>
+                        <p class="group-item--content">Tìm lại thần thái qua một đôi mắt
+                            rạng ngời</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/tre-hoa/drip-v6.jpg" alt="">
+                        <h1 class="group-item--title">DRIP - V6</h1>
+                        <p class="group-item--content">Chống lão hóa, phục hồi tươi trẻ
+                            cho làn da</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/tre-hoa/fsc.jpg" alt="">
+                        <h1 class="group-item--title">FSC</h1>
+                        <p class="group-item--content">Liệu pháp chỗng lão hóa </p>
+                        <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/tre-hoa/laser-micro-needling.jpg" alt="">
+                        <h1 class="group-item--title">LASER MICRONEEDING</h1>
+                        <p class="group-item--content">Thay mới làn da với công nghệ
+                            Laser tiên tiến</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="main-content--group-title mb-12">
+                    Sức khỏe
+                </div>
+                <div class="main-content--group-items mb-27">
+                    <div class="group-item">
+                        <img src="./assets/img/suc-khoe/demar-anti-shine.jpg" alt="">
+                        <h1 id="nam-gioi" class="group-item--title">DERMA ANTI SHINE</h1>
+                        <p class="group-item--content">Loại bỏ nếp nhăn sau 30 phút</p>
+                        <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/suc-khoe/demar-b-cell.jpg" alt="">
+                        <h1 class="group-item--title">DERMA B-CELL</h1>
+                        <p class="group-item--content">Tinh chất Placenta - nguồn dinh dưỡng
+                            “vàng” cho làn da</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/suc-khoe/demar-bright.jpg" alt="">
+                        <h1 class="group-item--title">DERMA BRIGHT</h1>
+                        <p class="group-item--content">Trẻ hóa tầng sâu, trắng hồng
+                            thật lâu</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/suc-khoe/demar-fat-burn.jpg" alt="">
+                        <h1 class="group-item--title">DERMA FAT BURN</h1>
+                        <p class="group-item--content">Liệu pháp cấy tinh dầu hủy mỡ
+                            từ Châu Âu </p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/suc-khoe/drip-v1.jpg" alt="">
+                        <h1 class="group-item--title">DRIP - V1</h1>
+                        <p class="group-item--content">Giải pháp tăng cường sức đề kháng
+                            chủ động</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                </div>
+
+                <div class="main-content--group-title mb-12">
+                    Nam giới
+                </div>
+                <div class="main-content--group-items mb-27">
+                    <div class="group-item">
+                        <img src="./assets/img/nam-gioi/body-genesis.jpg" alt="">
+                        <h1 class="group-item--title">BODY GENESIS</h1>
+                        <p class="group-item--content">Liệu pháp kích thích tế bào
+                            thải độc cơ thể</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/nam-gioi/drip-v2.jpg" alt="">
+                        <h1 class="group-item--title">DRIP - V2</h1>
+                        <p class="group-item--content">Phục hồi sức khỏe, tăng cường
+                            sinh lực và giảm mệt mỏi</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/nam-gioi/msc.jpg" alt="">
+                        <h1 class="group-item--title">MSC</h1>
+                        <p class="group-item--content">Cải thiện chức năng sinh lý
+                            nam & nữ</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/nam-gioi/vital-health-boost.jpg" alt="">
+                        <h1 class="group-item--title">VITA HEALTH BOOST</h1>
+                        <p class="group-item--content">Liệu pháp ngăn ngừa đột quỵ
+                            đến từ Đức</p>
+                            <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                    <div class="group-item">
+                        <img src="./assets/img/nam-gioi/vital-recovery-boost.jpg" alt="">
+                        <h1 class="group-item--title">VITA RECOVER BOOST</h1>
+                        <p class="group-item--content">Chống lão hóa toàn diện từ Thụy Sĩ</p>
+                        <button class="mb__20 main__button">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="l-12 s-12 top__footer">
+                <div class="change__to__row">
+                    <div class="l-5 s-12 left__footer">
+                        <div class="left__footer__img">
+                            <img src="assets/img/logo-white.png" alt="">
+                        </div>
+                        <p>
+                            Công ty TNHH Esme Quá Đẹp Việt Nam <br>
+                            MST: 0316939389 <br>
+                            346 Bến Vân Đồn, Phường 1, Quận 4, Tp. Hồ Chí Minh
+                        </p>
+                        <div class="left__footer__social">
+                            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="l-2 s-12 mid__footer footer__item">
+                        <p>Liên kết</p>
+                        <a href=""><canvas id="myCanvas" width="20px" height="20px"></canvas>Về chúng tôi</a>
+                        <a href=""><canvas id="myCanvas2" width="20px" height="20px"></canvas>Dịch vụ</a>
+                        <a href=""><canvas id="myCanvas3" width="20px" height="20px"></canvas>Cảm nhận khách hàng</a>
+                        <a href=""><canvas id="myCanvas4" width="20px" height="20px"></canvas>Đặt lịch</a>
+                        <a href=""><canvas id="myCanvas5" width="20px" height="20px"></canvas>Liên hệ</a>
+                    </div>
+                    <div class="l-5 s-12 right__footer footer__item">
+                        <h1>Gọi ngay</h1>
+                        <p>028.71.079.889</p>
+                        <h2>Đăng ký nhận thông báo</h2>
+                        <input type="text" placeholder="Email của bạn" name="" id=""> <button class="button_footer">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-12 s-12 bottom__footer ">
+                <p>© <a href="">VITAClinic</a>. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var canvas2 = document.getElementById("myCanvas2");
+            var canvas3 = document.getElementById("myCanvas3");
+            var canvas4 = document.getElementById("myCanvas4");
+            var canvas5 = document.getElementById("myCanvas5");
+            var arr = [canvas, canvas2, canvas3, canvas4, canvas5];
+            for (var i = 0; i <= arr.length; i++) {
+                var ctx = arr[i].getContext("2d");
+                ctx.beginPath();
+
+                ctx.moveTo(0, 0);
+                ctx.lineTo(7, 7);
+                ctx.lineTo(0, 14);
+                ctx.strokeStyle = "#757575"
+                ctx.stroke();
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>

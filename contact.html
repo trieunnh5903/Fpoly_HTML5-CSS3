@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/responsive-contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="header hide-on-mobile-and-tablet">
+            <div class="header__contact">
+                <div class="header__contact__phone">
+                    <i class="fa-solid fa-phone header__contact__phone__phone-icon"></i>
+                    <p class="header__contact__phone__phone-number">028.71.079.889</p>
+                </div>
+                <div class="header__contact__social">
+                    <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                    <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                    <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                    <div class="header__contact__taikhoan">
+                        <a class="header__contact__taikhoan__dang-nhap" href="./login.html">Đăng nhập</a>
+                        <a class="header__contact__taikhoan__dang-ky" href="./register.html">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__banner">
+            <div class="header__banner__logo">
+                <a href="./index.html"><img src="/assets/img/logo-white.png" alt="logo"></a>
+            </div>
+            <div class="mobile__icons">
+                <div class="mobile__icon">
+                    <a href="./login.html"><i style="color: white;" class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="mobile__icon">
+                    <label for="radio-nav-bar"><i class="fa-solid fa-bars"></i></label>
+                </div>
+            </div>
+            <input type="checkbox" hidden id="radio-nav-bar">
+            <div class="header__banner__navigation-bar">
+                <a href="./about-us.html">Về chúng tôi</a>
+                <a href="./service.html">Dịch vụ</a>
+                <a href="./appointment.html">Đặt lịch</a>
+                <a href="./contact.html">Liên hệ</a>
+            </div>
+        </div>
+        <div class="header__banner__img">
+            <p class="header__banner__img__text">Liên hệ</p>
+        </div>
+
+        <div class="main">
+            <div class="main__container">
+                <div class="main__container__left">
+                    <div class="address js_address">
+                        <div class="address__item">
+                            <div class="address__item-title">
+                                Hà Nội
+                            </div>
+                            <div class="address__item-content">
+                                <div class="icon-circle1">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <p><strong>Địa chỉ: </strong>Lầu 2, Royal City – 72A Nguyễn Trãi, P.Thượng Đình, Q.Thanh
+                                    Xuân, Hà Nội</p>
+                                <div class="icon-circle2">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <p><strong>Số điện thoại: </strong>024.2134.674</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="address js_address">
+                        <div class="address__item">
+                            <div class="address__item-title">
+                                Đà Nẵng
+                            </div>
+                            <div class="address__item-content">
+                                <div class="icon-circle1">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <p><strong>Địa chỉ: </strong>Lầu 3, Tòa Nhà Bưu Điện Thành Phố - 271 Nguyễn Văn Linh,
+                                    P.Vĩnh Trung, Q.Thanh Khê, Đà Nẵng</p>
+                                <div class="icon-circle2">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <p><strong>Số điện thoại: </strong>0236.318.466</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address js_address">
+                        <div class="address__item">
+                            <div class="address__item-title">
+                                Hồ Chí Minh
+                            </div>
+                            <div class="address__item-content">
+                                <div class="icon-circle1">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <p><strong>Địa chỉ: </strong>Lầu 3, Landmark 81 - 720A Điện Biên Phủ, P.22, Q.Bình
+                                    Thạnh, TP.Hồ Chí Minh
+                                </p>
+                                <div class="icon-circle2">
+                                    <i class="fa-solid fa-circle"></i>
+                                </div>
+                                <p><strong>Số điện thoại: </strong>028.3423.414</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__container__right">
+                    <div class="map__hn js-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7301301817247!2d105.81198051488302!3d21.00345228601211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad8b1fa17dd1%3A0x3e6bc5cdbf8540c9!2sR1A%20Royal%20City!5e0!3m2!1svi!2s!4v1658602129070!5m2!1svi!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map__dn js-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15336.442615344033!2d108.2116254!3d16.0597467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9a3b9598983c373!2zQsawdSDEkWnhu4duIFRwLsSQw6AgTuG6tW5n!5e0!3m2!1svi!2s!4v1658597857351!5m2!1svi!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map__hcm js-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.84987203154!2d106.7218383!3d10.7950328!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x872730fa8ae061f2!2sVinhomes%20Central%20Park%20%E2%80%93%20Landmark%2081!5e0!3m2!1svi!2s!4v1658597954103!5m2!1svi!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="l-12 s-12 top__footer">
+                <div class="change__to__row">
+                    <div class="l-5 s-12 left__footer">
+                        <div class="left__footer__img">
+                            <img src="assets/img/logo-white.png" alt="">
+                        </div>
+                        <p>
+                            Công ty TNHH Esme Quá Đẹp Việt Nam <br>
+                            MST: 0316939389 <br>
+                            346 Bến Vân Đồn, Phường 1, Quận 4, Tp. Hồ Chí Minh
+                        </p>
+                        <div class="left__footer__social">
+                            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                            <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="l-2 s-12 mid__footer footer__item">
+                        <p>Liên kết</p>
+                        <a href=""><canvas id="myCanvas" width="20px" height="20px"></canvas>Về chúng tôi</a>
+                        <a href=""><canvas id="myCanvas2" width="20px" height="20px"></canvas>Dịch vụ</a>
+                        <a href=""><canvas id="myCanvas3" width="20px" height="20px"></canvas>Cảm nhận khách hàng</a>
+                        <a href=""><canvas id="myCanvas4" width="20px" height="20px"></canvas>Đặt lịch</a>
+                        <a href=""><canvas id="myCanvas5" width="20px" height="20px"></canvas>Liên hệ</a>
+                    </div>
+                    <div class="l-5 s-12 right__footer footer__item">
+                        <h1>Gọi ngay</h1>
+                        <p>028.71.079.889</p>
+                        <h2>Đăng ký nhận thông báo</h2>
+                        <input type="text" placeholder="Email của bạn" name="" id=""> <button class="button_footer">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-12 s-12 bottom__footer ">
+                <p>© <a href="">VITAClinic</a>. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var canvas2 = document.getElementById("myCanvas2");
+            var canvas3 = document.getElementById("myCanvas3");
+            var canvas4 = document.getElementById("myCanvas4");
+            var canvas5 = document.getElementById("myCanvas5");
+            var arr = [canvas, canvas2, canvas3, canvas4, canvas5];
+            for (var i = 0; i <= arr.length; i++) {
+                var ctx = arr[i].getContext("2d");
+                ctx.beginPath();
+
+                ctx.moveTo(0, 0);
+                ctx.lineTo(7, 7);
+                ctx.lineTo(0, 14);
+                ctx.strokeStyle = "#757575"
+                ctx.stroke();
+            }
+        </script>
+    </div>
+    <script>
+        let index = 0;
+        let content = document.getElementsByClassName("js_address");
+        let maps = document.getElementsByClassName("js-map");
+        let contentRight = document.getElementsByClassName("main__container__right");
+        show();
+        function show() {
+            let i;
+            for (i = 0; i < maps.length; i++) {
+                maps[i].style.display = "none";
+            }
+            index++;
+            if (index > maps.length) { index = 1 }
+            for (i = 0; i < content.length; i++) {
+                content[i].className = content[i].className.replace(" bg-color--main", "");
+            }
+            maps[index - 1].style.display = "block";
+            content[index - 1].className += " bg-color--main";
+            setTimeout(show, 5000); // đổi mọi thứ sau
+        }
+    </script>
+
+</body>
+
+</html>

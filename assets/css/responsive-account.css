@@ -1,0 +1,26 @@
+@media (max-width: 739px){
+    .main {
+        height: 700px;
+        padding: 0;
+        background-color: #1c0f07;
+        
+    }
+    .form-login, .form-register{
+        background-color: #1c0f07;
+        color: white;
+    }
+    .main__right{
+        width: 100%;
+    }
+    footer{
+        margin-top: 0;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px){
+    .main{
+        padding: 0 40px;
+    }
+    .main__container__right iframe{
+        height: 445px;
+    }
+}

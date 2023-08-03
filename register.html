@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/responsive-account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <body>
+        <div class="app">
+            <div class="header hide-on-mobile">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="/assets/img/logo.png" alt="logo"></a>
+                    <p>Đăng Ký</p>
+                </div>
+                <div class="header__help">
+                    <a href="#">Bạn cần giúp đỡ ?</a>
+                </div>
+            </div>
+            <div class="header__banner">
+                <div class="header__banner__logo">
+                    <a href="./index.html"><img src="/assets/img/logo-white.png" alt="logo"></a>
+                </div>
+                <div class="mobile__icons">
+                    <div class="mobile__icon">
+                        <a href="./login.html"><i style="color: white;" class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="mobile__icon">
+                        <label for="radio-nav-bar"><i class="fa-solid fa-bars"></i></label>
+                    </div>
+                </div>
+                <input type="checkbox" hidden id="radio-nav-bar">
+                <div class="header__banner__navigation-bar">
+                    <a href="./about-us.html">Về chúng tôi</a>
+                    <a href="./service.html">Dịch vụ</a>
+                    <a href="./appointment.html">Đặt lịch</a>
+                    <a href="./contact.html">Liên hệ</a>
+                </div>
+            </div>
+            <div class="row-2 main">
+                <div class="main__left hide-on-mobile">
+                    <div class="main__left__logo">
+                        <img src="./assets/img/logo-icon.png" alt="">
+                        <div class="main__left__text">
+                            Hệ thống làm đẹp 5 sao chuẩn Châu Âu với đội ngũ bác sĩ
+                            hàng đầu
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main__right">
+                    <div id="register" class="form-register">
+                        <div class="form-register__header">
+                            <h1>Đăng ký</h1>
+                        </div>
+                        <div class="form-register__main">
+                            <input type="text" onkeyup="validateForm()" maxlength="256"
+                                placeholder="Email/Số điện thoại/Tên đăng nhập" name="" id="txtUserName">
+                            <p class="form__warning"></p>
+                            <input type="password" onkeyup="validateForm()" name="" maxlength="16"
+                                placeholder="Mật khẩu" id="txtPassword">
+                            <p class="form__warning"></p>
+                            <input type="password" onkeyup="validateForm()" name="" maxlength="16"
+                                placeholder="Nhập lại mật khẩu" id="txtRePassword">
+                            <p class="form__warning"></p>
+                            <button class="main__button-dang-ky" disabled>Đăng ký</button>
+                            <div class="main__button-dang-ky__break">
+                                <div class="button-dang-ky__break__line">
+
+                                </div>
+                                <div class="button-dang-ky__break_text">
+                                    hoặc
+                                </div>
+                                <div class="button-dang-ky__break__line">
+
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            var textWaring = document.getElementsByClassName("form__warning");
+                            var btnDangKy = document.getElementsByClassName("main__button-dang-ky");
+                            function validateForm() {
+                                var txtUserName = document.getElementById("txtUserName").value;
+                                var txtPassword = document.getElementById("txtPassword").value;
+                                var txtRePassword = document.getElementById("txtRePassword").value;
+                                if (txtPassword != "" && txtUserName != "") {
+                                    btnDangKy[0].toggleAttribute("disabled", false);
+                                    textWaring[0].innerHTML = "";
+                                    textWaring[1].innerHTML = "";
+                                    textWaring[2].innerHTML = "";
+
+                                } else {
+                                    btnDangKy[0].toggleAttribute("disabled", true);
+                                }
+                                if (txtPassword == "" || txtUserName == "") {
+
+                                    if (txtUserName == "") {
+                                        textWaring[0].innerHTML = "Vui lòng diền vào mục này."
+                                    } 
+                                    if (txtPassword == "") {
+                                        textWaring[1].innerHTML = "Vui lòng diền vào mục này."
+                                    } 
+                                    if (txtRePassword == ""){
+                                        textWaring[2].innerHTML = "Vui lòng diền vào mục này."
+                                    }
+                                }
+
+                            }
+                        </script>
+                        <div class="form-register__footer">
+                            <div class="form-register__footer__button-group">
+                                <button class="footer__button-group__facebook">
+                                    <img src="../assets/img/facebook-logo.png" alt="">
+                                    Facebook</button>
+                                <button class="footer__button-group__google">
+                                    <img src="./assets/img/google-logo.png" alt="">
+                                    Google</button>
+                            </div>
+                            <p class="form-register__footer__rules">
+                                Bằng việc đăng kí, bạn đã đồng ý với Shopee về <br>
+                                <a href="#"> Điều khoản dịch vụ </a>& <a href="#">Chính sách bảo mật</a>
+                            </p>
+                            <p class="form-register__footer__switch">Bạn đã có tài khoản? <a href="./login.html">Đăng
+                                    nhập</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="l-12 s-12 top__footer">
+                    <div class="change__to__row">
+                        <div class="l-5 s-12 left__footer">
+                            <div class="left__footer__img">
+                                <img src="assets/img/logo-white.png" alt="">
+                            </div>
+                            <p>
+                                Công ty TNHH Esme Quá Đẹp Việt Nam <br>
+                                MST: 0316939389 <br>
+                                346 Bến Vân Đồn, Phường 1, Quận 4, Tp. Hồ Chí Minh
+                            </p>
+                            <div class="left__footer__social">
+                                <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                                <a href=""> <i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="l-2 s-12 mid__footer footer__item">
+                            <p>Liên kết</p>
+                            <a href=""><canvas id="myCanvas" width="20px" height="20px"></canvas>Về chúng tôi</a>
+                            <a href=""><canvas id="myCanvas2" width="20px" height="20px"></canvas>Dịch vụ</a>
+                            <a href=""><canvas id="myCanvas3" width="20px" height="20px"></canvas>Cảm nhận khách hàng</a>
+                            <a href=""><canvas id="myCanvas4" width="20px" height="20px"></canvas>Đặt lịch</a>
+                            <a href=""><canvas id="myCanvas5" width="20px" height="20px"></canvas>Liên hệ</a>
+                        </div>
+                        <div class="l-5 s-12 right__footer footer__item">
+                            <h1>Gọi ngay</h1>
+                            <p>028.71.079.889</p>
+                            <h2>Đăng ký nhận thông báo</h2>
+                            <input type="text" placeholder="Email của bạn" name="" id=""> <button class="button_footer">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-12 s-12 bottom__footer ">
+                    <p>© <a href="">VITAClinic</a>. All Rights Reserved.</p>
+                </div>
+            </footer>
+            <script>
+                var canvas = document.getElementById("myCanvas");
+                var canvas2 = document.getElementById("myCanvas2");
+                var canvas3 = document.getElementById("myCanvas3");
+                var canvas4 = document.getElementById("myCanvas4");
+                var canvas5 = document.getElementById("myCanvas5");
+                var arr = [canvas, canvas2, canvas3, canvas4, canvas5];
+                for (var i = 0; i <= arr.length; i++) {
+                    var ctx = arr[i].getContext("2d");
+                    ctx.beginPath();
+
+                    ctx.moveTo(0, 0);
+                    ctx.lineTo(7, 7);
+                    ctx.lineTo(0, 14);
+                    ctx.strokeStyle = "#757575"
+                    ctx.stroke();
+                }
+            </script>
+        </div>
+    </body>
+</body>
+
+</html>

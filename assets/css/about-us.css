@@ -1,0 +1,146 @@
+.header__banner__img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 358px;  
+    position: relative;
+    background-image: linear-gradient(0, rgba(18, 17, 17, 0.7), rgb(18, 17, 17, 0.7)), url(/assets/img/banner-about-us.png);
+}
+
+.header__banner__img__text{
+    position: absolute;
+    color: var(--white-color);
+    width: 100%;
+    text-align: center;
+    padding: 0 55px;
+    font-size: 6.2rem;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+
+.ceo{
+    height: 930px;
+    padding: 110px;
+    display: flex;
+}
+
+.ceo__img img{
+    width: 100%;
+}
+
+.ceo__text{
+    padding: 50px 100px;
+    align-self: center;
+    background-color: #fef1ef;
+    height: 80%;
+    font-size: 1.6rem;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+.ceo__name p{
+   
+}
+
+.ceo__full-name{
+    font-size: 3.2rem;
+    margin: 0;
+    margin-top: 20px;
+
+    font-weight: 500;
+
+}
+.ceo__office{
+    font-size: 1.6rem;
+    margin: 0;
+    margin-top: 10px;
+    text-align: left;
+    margin-top: 20px;
+    
+}
+
+.ceo__office span{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+/* giai phap */
+
+.giai-phap{
+    margin-top: 100px ;
+    height: 400px;
+    background-color: #fef1ef;
+    padding: 80px 110px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.main__key-word__giai-phap{
+    text-align: left;
+    margin-bottom: 10px;    
+}
+
+.main__key-word__giai-phap span{
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+ 
+}
+
+
+.giai-phap__title h1{
+    font-size: 6rem;
+    margin: 0;
+}
+
+.giai-phap__left{
+    width: 50%;
+}
+
+.giai-phap__left p{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.giai-phap__img{
+    position: absolute;
+    right: 10%;
+   
+}
+
+/* nhan luc */
+.nhan-luc{
+    padding: 80px 110px;
+    margin-top: 50px;
+    font-size: 1.6rem;
+}
+
+.nhan-luc__content{
+    display: flex;
+    width: 100%;
+}
+
+.nhan-luc__key-word h1{
+    font-size: 6rem;
+    margin-top: 10px;
+}
+
+.nhan-luc__item{
+    width: 33.3333%;
+    text-align: center;
+}
+
+.nhan-luc__item img{
+    display: block;
+    width: 100%;
+    
+}
+.video-iframe{
+    width: 100%;
+    padding: 80px 100px;
+}
+.video-iframe iframe{
+    width: 100%;
+    height: 600px;
+}
